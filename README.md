@@ -1,1 +1,20 @@
-# PyCLaPT
+# PyCLaPT - Collect Logs and Parse Them (in Python now) 🐍
+
+This ReadME content is copied and pasted from CLaPT.  
+(https://github.com/citizen27/PyCLaPT) 
+
+Mind numbing parts of this documentation and code commenting have been written by AI/ML, particularly ChatGPT and Bard (this ReadMe is almost entirely AI/ML generated because it does a way better job than I can). **All PowerShell scripts are written, tested and developed by me, or me and other humans** (credit will be given, or code will be linked).  
+
+## Overview
+
+**This code repository encompasses a collection of scripts designed for the purpose of parsing Windows logs and databases.** 
+
+Its primary objective is to streamline the monitoring and analysis of Windows system events, providing valuable insights into system activities, potential security incidents, or areas of visibility deficiency. The overarching goal of this **"toolkit"** is to encompass a comprehensive array of automated triage functionalities, with a particular emphasis on efficient responses to security incidents from an Incident Response (IR) perspective. It is important to emphasize that this tool is not intended for utilization in preservation or forensic imaging procedures.
+
+It is crucial to acknowledge that all scripts contained within this repository are configured to operate under the assumption of default settings for log and resource locations. In cases where the parsing target deviates from these defaults, the scripts may either execute and generate an empty CSV file or encounter operational failures without providing exhaustive error explanations. This design choice stems from the recognition that the majority of Windows systems typically adhere to default configurations. However, it is imperative to recognize that if this level of risk is deemed unacceptable within the context of your specific requirements, the utility of this toolkit may be limited or unsuitable.
+
+At present, this toolkit prioritizes expeditious response capabilities over considerations of digital forensics. This strategic approach is deliberate, given the challenges associated with achieving a **"zero" forensic footprint** while gathering crucial information. Provided that risks and deviations from standard practices are meticulously documented, any potential forensic impact associated with this toolkit should not be of significant concern. The core operational philosophy guiding this toolkit is oriented towards incident response, with an emphasis on acquiring actionable insights rather than preservation. In essence, this toolkit is optimized for swift triage.
+
+It is noteworthy that specific segments of the code, particularly those related to parsing files within the **"C:\Windows\Panther"** directory and native Registry parsers, may introduce issues when employed within pure .NET environments. While ongoing efforts are being made to explore potential solutions, the current approach involves initiating a subprocess within an administrative **Command Prompt session** to invoke **"tracerpt.exe"** for parsing certain ETL files situated under the Panther directory. It is important to emphasize that this is a standard Windows feature and is devoid of any malicious intent. The choice to employ Command Prompt, as opposed to PowerShell, was motivated by a desire to maintain code clarity, with future enhancements in mind.
+
+These scripts operate with elevated privileges, including **System-level administrative execution**, desktop folder creation and management, and the capability to bypass **Group Policy Object (GPO)** and other execution policy constraints. It is strongly advised to thoroughly review and customize the scripts to align them with the specific requirements of your use case, as each scenario may necessitate distinct configurations. This toolkit offers a high degree of flexibility, and outcomes may vary depending on your individual needs; therefore, the toolkit can be tailored accordingly to meet those needs.
