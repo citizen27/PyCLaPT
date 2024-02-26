@@ -3,7 +3,7 @@
 This ReadME content is copied and pasted from CLaPT. May not all be applicabale, so wait until it is fixed to rely on.  
 (https://github.com/citizen27/PyCLaPT) 
 
-Mind numbing parts of this documentation and code commenting have been written by AI/ML, particularly ChatGPT and Bard (this ReadMe is almost entirely AI/ML generated because it does a way better job than I can). **All PowerShell scripts are written, tested and developed by me, or me and other humans** (credit will be given, or code will be linked).  
+Mind numbing parts of this documentation and code commenting have been written by AI, particularly ChatGPT and Bard (this ReadMe is almost entirely AI generated because it does a way better job than I can). **All PowerShell scripts are written, tested and developed by me, or me and other humans** (credit will be given, or code will be linked).  
 
 ## Overview
 
